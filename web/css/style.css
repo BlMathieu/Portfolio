@@ -18,30 +18,46 @@ body{
     font-family: 'RetroTeam',Arial;
     text-align: center;
 }
+.name{
+    text-align: center;
+}
 
-.rubrique{
+#rubrique{
     display: flex;
     justify-content: center;
 }
-.rubrique div{
+#rubrique div{
     display: flex;
     align-items: center;
     flex-direction: row;
     margin-left: 50px;
+    text-align: center;
+
 
 }
-.rubrique p{
-    border: solid yellow 3px;
+#rubrique p{
 
+    border: solid white 3px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: black 2px 2px;
+    color: burlywood;
+}
+#rubrique p:hover{
+    background-color: gray;
+}
+#rubrique a{
+    text-decoration: none;
 }
 
 footer{
     bottom: 0;
-    position: absolute;
     height: 100px;
-    width: 100%;
+    max-width: 100%;
     left: 0;
     justify-content: center;
+    border-top: solid white 2px;
+
 }
 #vaisseau{
     position: absolute;
@@ -52,4 +68,53 @@ footer{
     width: 5px;
     height: 25px;
     position: absolute;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo img{
+    width:  50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.logo img:hover{
+    border: solid white 1px;
+    border-radius: 5px;
+}
+
+.projets{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.projets div{
+    display: flex;
+    flex-direction: column;
+}
+.projets div div{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.projets img{
+    width: 250px;
+    height: 150px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.projets img:hover{
+    width: 260px;
+    height: 160px;
+    border:solid white 3px;
+    border-radius: 5px;
 }

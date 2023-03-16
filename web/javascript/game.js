@@ -1,22 +1,41 @@
 let vaisseau = document.getElementById('vaisseau');
 let footer =document.getElementById('footer');
 let missileList = document.getElementById('missileList');
+let rubrique = document.getElementById('rubrique');
 let tabM = Array();
+let tabE = Array();
 let shoot = false;
 function missileDeplacement(missile){
     let y = missile.style.top.split('px');
     missile.style.top=Number(y[0])-Number(5)+'px';
+
+    missileHitbox(missile);
 }
+
 
 async function removeMissile(missile){
     if(missile.y<=0){
         missileList.removeChild(missile);
         tabM.splice(tabM.indexOf(missile),1)
     }
-    console.log(tabM);
+}
+async function removeObject(){
+
 }
 
 function missileHitbox(missile){
+
+
+    for(let i=0;i<rubrique.getElementsByTagName('p').length;i++){
+        let element = rubrique.getElementsByTagName('p').item(i);
+
+        let widthCond = element.offsetLeft<=missile.offsetLeft && element.offsetLeft+element.offsetWidth>=missile.offsetLeft;
+        let heightCond = element.offsetTop+element.offsetHeight>=window.innerHeight+missile.offsetTop && element.offsetTop<=missile.offsetTop+window.innerHeight;
+        if((widthCond&&heightCond)){
+            document.location.href=element.textContent.toLocaleLowerCase()+".html";
+        }
+
+    }
 
 }
 
@@ -33,7 +52,6 @@ function initMissile(){
 }
 
 document.addEventListener('mousemove',function (event){
-   // console.log('move '+Number(event.pageX));
     if(event.pageX+50<window.innerWidth){
         vaisseau.style.left=event.pageX+'px';
     }
@@ -60,6 +78,7 @@ document.onclick = function (){
 function loop(){
     setInterval(()=>{
         update();
+
     },1000/60);
 }
 

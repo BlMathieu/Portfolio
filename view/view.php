@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="../web/css/style.css">
-    <script src="../web/javascript/general.js"></script>
+    <title> <?php echo $title?> </title>
+
 </head>
 
 <body>
 <header>
-    <h1 class="title"><?php $title?></h1>
+    <h1 class="title"><?php echo $title?></h1>
     <p class="name">Blanchet Mathieu</p>
 </header>
 <nav id="rubrique">
@@ -26,17 +25,18 @@
         <a href="frontController.php?action=contact"><p>Contact</p></a>
     </div>
 </nav>
+
 <main>
-    <?php require __DIR__."/{$chemin}";?>
+    <?php require __DIR__."/{$cheminBody}"?>
 </main>
 
 
 <footer id="footer">
     <div class="logo">
-        <img id="logoLink" src="../web/images/linkedin.png" alt="linkedin">
-        <img id="logoGitH" src="../web/images/github.png" alt="github">
-        <img id="logoGitL" src="../web/images/gitlab.png" alt="gitlab">
-        <img id="logoCV" src="../web/images/profile.png" alt="CV">
+       <a target="_blank" href="https://fr.linkedin.com/in/mathieu-blanchet-5766b3230"><img id="logoLink" src="../web/images/linkedin.png" alt="linkedin"></a>
+       <a target="_blank" href="https://github.com/BlMathieu/"><img id="logoGitH" src="../web/images/github.png" alt="github"></a>
+       <a target="_blank" href="https://gitlabinfo.iutmontp.univ-montp2.fr/blanchetm"><img id="logoGitL" src="../web/images/gitlab.png" alt="gitlab"></a>
+       <a target="_blank" href="../web/cv/CV-Blanchet-Mathieu.pdf"><img id="logoCV" src="../web/images/profile.png" alt="CV"></a>
     </div>
 </footer>
 

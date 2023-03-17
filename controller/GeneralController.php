@@ -6,10 +6,11 @@ class GeneralController{
         require __DIR__."/../view/$chemin";
     }
 
-    public function afficheAccueil(){
-        static::affiche('view.php','accueil.php','Accueil');
+    public static function afficheAccueil(){
+        static::affiche('view.php','accueil.html','Accueil');
     }
-    public function afficheProjets(){
+    public static function afficheProjets(){
+        static::affiche('view.php','projets');
 
     }
 }

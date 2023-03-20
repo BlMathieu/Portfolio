@@ -3,17 +3,20 @@ body{
 }
 
 #mobs{
+    display: flex;
     flex-direction: row;
     justify-content: center;
     height: 52em;
+    width: 100%;
 }
 
 .monstre{
     width: 50px;
     height: 50px;
+    position: sticky;
 }
 
-.vaisseau{
+#vaisseau{
     width: 50px;
     height: 50px;
     position: absolute;

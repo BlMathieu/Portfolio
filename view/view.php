@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title> <?php echo $title?> </title>
-
+    <link rel="stylesheet" href="../web/css/style.css">
 </head>
 
 <body>
@@ -38,6 +38,10 @@
        <a target="_blank" href="https://gitlabinfo.iutmontp.univ-montp2.fr/blanchetm"><img id="logoGitL" src="../web/images/gitlab.png" alt="gitlab"></a>
        <a target="_blank" href="../web/cv/CV-Blanchet-Mathieu.pdf"><img id="logoCV" src="../web/images/profile.png" alt="CV"></a>
     </div>
+    <div class="secret">
+        <a target="_blank" href="frontController.php?action=secret">?</a>
+    </div>
+
 </footer>
 
 </body>

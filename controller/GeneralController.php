@@ -6,10 +6,6 @@ class GeneralController{
         require __DIR__."/../view/$chemin";
     }
 
-
-    public static function lire(){
-        echo('sazlut');
-    }
     public static function afficheAccueil(){
         static::affiche('view.php','accueil.html','Accueil');
     }
@@ -31,6 +27,9 @@ class GeneralController{
 
     public static function afficheAventurierdurail(){
         static::affiche('view.php','aventurierDuRail.html','Aventurier Du Rail');
+    }
+    public static function afficheSecret(){
+        static::affiche('secret.html','','');
     }
 }
 

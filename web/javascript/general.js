@@ -4,7 +4,6 @@ function navTitleFocus(){
     const element = rubrique.getElementsByTagName('p');
     for(let i=0;i<element.length;i++){
         if(element.item(i).textContent==document.title){
-            console.log(element.item(i).textContent);
             element.item(i).style.borderColor="red";
         }
     }

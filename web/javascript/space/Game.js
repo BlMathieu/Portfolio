@@ -4,20 +4,35 @@ let tableaumobs = Array();
 let tableauMissile = Array();
 let tir = false;
 let missileDiv;
+let vitesseMonstre = 3;
+let pScore;
+let score = 0;
 function initVar(){
     idvaisseau = document.getElementById('vaisseau');
     idmobs = document.getElementById('mobs');
     missileDiv = document.getElementById('missileDiv');
+    pScore = document.getElementById('pScore');
+    document.getElementById('btPlay').onclick = function (){
+        initMobs(4,10);
+        document.getElementById('replay').style.visibility ='hidden';
+        score=0;
+    };
 }
-function initMobs(){
-    for(let i=0;i<10;i++){
-        let element = document.createElement('img');
-        element.alt='mob';
-        element.classList.add('monstre');
-        element.src ="../web/images/monstre.png";
-        element.id=i;
-        tableaumobs.push(element);
-        idmobs.append(element);
+function initMobs(ligne,nbMonstre){
+    for(let i=0;i<ligne;i++){
+        let div = document.createElement('div');
+        div.classList.add('divMonstres');
+
+        for(let x=0;x<nbMonstre;x++){
+            let element = document.createElement('img');
+            element.alt='mob';
+            element.classList.add('monstre');
+            element.src ="../web/images/monstre.png";
+          //  element.style.left = Number(element.offsetLeft) + 'px'
+            div.appendChild(element);
+            tableaumobs.push(element);
+        }
+        idmobs.appendChild(div);
     }
 }
 
@@ -45,7 +60,10 @@ async function supprimerMissile(missile){
     missileDiv.removeChild(missile);
     tableauMissile.splice(tableauMissile.indexOf(missile),1);
 }
-
+function majScore(){
+    score+=100;
+    document.getElementById('pScore').textContent = "Score :"+score;
+}
 async function missileHitbox(){
     for(let i=0;i<tableaumobs.length;i++){
         elem = tableaumobs[i];
@@ -56,6 +74,7 @@ async function missileHitbox(){
             let condY = missile.offsetTop+window.innerHeight<=elem.offsetTop+window.innerHeight+elem.offsetHeight-15;
 
             if(condX && condY){
+                majScore();
                 supprimerMissile(missile);
                 supprimerMob(elem);
             }
@@ -77,21 +96,19 @@ function tirer(){
     tir=false;
 }
 
-
 function deplacerMonstre(){
-    for(let i=0;i<tableaumobs.length;i++){
+     for(let i=0;i<tableaumobs.length;i++) {
         let elem = tableaumobs[i];
-        if(elem.offsetLeft<=window.innerWidth-elem.offsetWidth-80){
-            console.log();
-            elem.style.left = elem.offsetLeft+5+'px';
-            console.log('avance')
-        }
-        else{
-            elem.style.left= Number(elem.offsetLeft)-Number(1)+'px';
-            console.log('recul')
-        }
 
+     /* if(elem.offsetLeft>=window.innerWidth-58 || elem.offsetLeft<=8){
+
+        }*/
+        elem.style.left = elem.offsetLeft+vitesseMonstre+'px';
     }
+}
+
+function inverserDeplacementMonstre(){
+    vitesseMonstre *=-1;
 }
 
 window.addEventListener('click',event =>{
@@ -105,12 +122,21 @@ window.addEventListener('mousemove',ev => {
 
 window.onload = function (){
     initVar();
-    initMobs();
+    initMobs(4,10);
+
+    setInterval( function (){
+        inverserDeplacementMonstre();
+    },4000);
+
     setInterval(function (){
         tirer();
         deplacerMissile();
-       // deplacerMonstre();
+        deplacerMonstre();
         hitboxMur();
         missileHitbox();
+
+        if(tableaumobs.length===0){
+            document.getElementById('replay').style.visibility='visible';
+        }
     },1000/60)
 }

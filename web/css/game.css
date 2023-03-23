@@ -4,8 +4,7 @@ body{
 
 #mobs{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     height: 52em;
     width: 100%;
 }
@@ -31,4 +30,22 @@ footer{
     width: 5px;
     height: 25px;
     position: absolute;
+}
+.divMonstres{
+    display: flex;
+    width: 100%;
+}
+
+#pScore{
+    color: white;
+    padding-top: 50px;
+}
+
+#replay{
+    width: 150px;
+    height: 50px;
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+
 }

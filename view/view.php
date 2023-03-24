@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> <?php echo $title?> </title>
+    <title> <?php echo($title); ?>
+    </title>
     <link rel="stylesheet" href="../web/css/style.css">
 </head>
 

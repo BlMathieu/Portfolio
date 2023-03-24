@@ -1,0 +1,29 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid white 3px;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    width: 300px;
+    height: 200px;
+    word-wrap: break-word;
+
+}
+.numero{
+    font-family: "Nirmala UI";
+    font-weight: lighter;
+}
+.email{
+    font-size: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.contactBlock{
+    display: flex;
+    justify-content: center;
+    border-top: solid white 2px;
+}

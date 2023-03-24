@@ -10,7 +10,7 @@ class GeneralController{
         static::affiche('view.php','accueil.html','Accueil');
     }
     public static function afficheProjets(){
-        static::affiche('view.php','projets.html','Liste des projets');
+        static::affiche('view.php','projets.html','Projets');
     }
 
     public static function afficheInformation(){
@@ -27,6 +27,10 @@ class GeneralController{
 
     public static function afficheAventurierdurail(){
         static::affiche('view.php','aventurierDuRail.html','Aventurier Du Rail');
+    }
+
+    public static function afficheEcommerce(){
+        static::affiche('view.php','ecommerce.html','E-commerce');
     }
     public static function afficheSecret(){
         static::affiche('secret.html','','');

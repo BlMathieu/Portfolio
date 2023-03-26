@@ -17,7 +17,7 @@
         <a href="frontController.php"><p>Accueil</p></a>
     </div>
     <div>
-        <a href="frontController.php?action=information"><p>Information</p></a>
+        <a href="frontController.php?action=information"><p>Informations</p></a>
     </div>
     <div>
         <a href="frontController.php?action=projets"><p>Projets</p></a>

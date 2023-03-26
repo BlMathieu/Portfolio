@@ -14,7 +14,7 @@ class GeneralController{
     }
 
     public static function afficheInformation(){
-        static::affiche('view.php','information.html','Information');
+        static::affiche('view.php','informations.html','Informations');
     }
 
     public static function afficheContact(){

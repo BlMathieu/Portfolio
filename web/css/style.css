@@ -118,3 +118,13 @@ footer{
     text-decoration: none;
     color: gray;
 }
+
+.Arial p{
+    font-family: Arial, serif;
+    font-size: 25px;
+}
+.Presentation p{
+    font-family: Arial, serif;
+    font-size: 25px;
+    text-align: center;
+}

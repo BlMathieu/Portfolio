@@ -1,0 +1,23 @@
+.parcours{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+}
+
+.étude{
+    border: solid white 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    width: 500px;
+    margin-right: 50px;
+
+}
+
+.étude p {
+
+}

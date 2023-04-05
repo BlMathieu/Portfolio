@@ -1,3 +1,8 @@
+section{
+    border-top: solid white 2px;
+
+}
+
 .parcours{
     display: flex;
     justify-content: center;
@@ -8,14 +13,14 @@
 }
 
 .étude{
-    border: solid white 1px;
+    border: solid #ff0000 2px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 300px;
     width: 500px;
     margin-right: 50px;
-
 }
 
 .étude p {

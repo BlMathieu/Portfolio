@@ -36,7 +36,6 @@ body{
 
 }
 #rubrique p{
-
     border: solid white 3px;
     border-radius: 5px;
     padding: 10px 10px 10px 10px;
@@ -75,8 +74,8 @@ footer{
 }
 
 .logo img:hover{
-    border: solid white 1px;
-    border-radius: 5px;
+    width: 75px;
+    height: 75px;
 }
 
 .projets{
@@ -120,11 +119,16 @@ footer{
 }
 
 .Arial p{
-    font-family: Arial, serif;
+    font-family: "Nirmala UI";, serif;
     font-size: 25px;
 }
 .Presentation p{
     font-family: Arial, serif;
     font-size: 25px;
     text-align: center;
+}
+
+h4{
+    padding-left: 10px;
+    color: #b39d6b;
 }

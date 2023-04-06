@@ -18,8 +18,17 @@ body{
     font-family: 'RetroTeam',Arial;
     text-align: center;
 }
-.name{
+.title:hover{
+    color: burlywood;
+    transition: color 0.5s ease-out;
+}
+
+.name {
     text-align: center;
+}
+.name:hover{
+    color: burlywood;
+    transition: color 0.5s ease-out;
 }
 
 #rubrique{
@@ -41,9 +50,11 @@ body{
     padding: 10px 10px 10px 10px;
     box-shadow: black 2px 2px;
     color: burlywood;
+    transition: border-color 0.5s ease-out;
 }
 #rubrique p:hover{
     background-color: gray;
+    border-color: burlywood;
 }
 #rubrique a{
     text-decoration: none;

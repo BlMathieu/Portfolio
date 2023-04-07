@@ -6,13 +6,13 @@
     font-family: 'VaryReg';
     src: url("../font/VarygraphieThin_PERSONAL_USE_ONLY.otf")format("opentype");
 }
+
 body{
     background-color: black;
     color: white;
     font-family: 'VaryReg',Arial;
     font-size: 30px;
 }
-
 .title{
     font-size: 80px;
     font-family: 'RetroTeam',Arial;
@@ -34,6 +34,7 @@ body{
 #rubrique{
     display: flex;
     justify-content: center;
+    margin: 50px;
 }
 #rubrique div{
     display: flex;
@@ -67,7 +68,7 @@ footer{
     left: 0;
     justify-content: center;
     border-top: solid white 2px;
-
+    margin-bottom: 0;
 }
 
 .logo{
@@ -143,3 +144,8 @@ h4{
     padding-left: 10px;
     color: #b39d6b;
 }
+
+#vanta-canvas{
+    min-height: 100%;
+}
+

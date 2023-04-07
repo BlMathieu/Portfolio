@@ -1,5 +1,4 @@
 
-
 function navTitleFocus(){
     const element = rubrique.getElementsByTagName('p');
     for(let i=0;i<element.length;i++){

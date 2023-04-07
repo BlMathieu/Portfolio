@@ -3,6 +3,7 @@ section{
 
 }
 
+
 .parcours{
     display: flex;
     justify-content: center;
@@ -11,7 +12,9 @@ section{
     text-align: center;
 
 }
-
+#vanta-canvas{
+    padding-bottom: 15px;
+}
 .étude{
     border: solid #ff0000 2px;
     border-radius: 10px;

@@ -10,7 +10,7 @@
 <body>
 <header>
     <h1 class="title"><?php echo $title?></h1>
-    <p class="name">Blanchet Mathieu</p>
+    <p class="name">Blanchet Mathieu</p> 
 </header>
 <nav id="rubrique">
     <div>

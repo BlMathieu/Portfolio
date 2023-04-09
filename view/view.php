@@ -36,10 +36,6 @@
                     <a target="_blank" href="https://github.com/BlMathieu/"><img id="logoGitH" src="../web/images/github.png" alt="github"></a>
                     <a target="_blank" href="https://gitlabinfo.iutmontp.univ-montp2.fr/blanchetm"><img id="logoGitL" src="../web/images/gitlab.png" alt="gitlab"></a>
                     <a target="_blank" href="../web/cv/CV-Blanchet-Mathieu.pdf"><img id="logoCV" src="../web/images/profile.png" alt="CV"></a>
-
-                    <div class="secret">
-                        <a target="_blank" href="frontController.php?action=secret">?</a>
-                    </div>
                 </div>
 
             </nav>

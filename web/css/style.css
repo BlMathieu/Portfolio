@@ -7,17 +7,21 @@
     src: url("../font/VarygraphieThin_PERSONAL_USE_ONLY.otf")format("opentype");
 }
 
+html{
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+
 body{
+    margin: 0;
     background-color: black;
     color: white;
-    font-family: 'VaryReg',Arial;
     font-size: 30px;
+    background-image: url("../images/fond.jpg");
 }
 .title{
-    font-size: 80px;
-    font-family: 'RetroTeam',Arial;
-    text-align: center;
-    margin:0;
+    font-size: 40px;
+    text-align: start;
 }
 .title:hover{
     color: burlywood;
@@ -35,61 +39,48 @@ body{
 
 #rubrique{
     display: flex;
-    justify-content: center;
-    margin: 50px;
+    background: black;
+    opacity: 0.9;
+    justify-content: space-around;
+    margin :0;
+    padding : 0;
+    min-width: 100%;
+    font-family: VaryReg,Arial;
 }
 #rubrique div{
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-left: 50px;
-    text-align: center;
-
-
+    padding-left: 5px;
+    padding-right: 5px;
 }
-#rubrique p{
-    border: solid white 3px;
-    border-radius: 5px;
-    padding: 10px 10px 10px 10px;
-    box-shadow: black 2px 2px;
+.choix{
     color: burlywood;
-    transition: border-color 0.5s ease-out;
-}
-#rubrique p:hover{
-    background-color: gray;
-    border-color: burlywood;
-}
-#rubrique a{
+    transition: border-spacing 0.3s ease-in-out;
     text-decoration: none;
 }
 
-footer{
-    bottom: 0;
-    height: 100px;
-    max-width: 100%;
-    left: 0;
-    justify-content: center;
-    border-top: solid white 2px;
-    margin-bottom: 0;
+.choix:hover{
+    border-bottom: 2px solid #f0f0f0;
 }
 
 .logo{
     display: flex;
     justify-content: center;
-
+    align-items: center;
+    align-content: center;
 }
 
 .logo img{
-    width:  50px;
-    height: 50px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 25px;
+    width:  25px;
+    height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .logo img:hover{
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
 }
 
 .projets{
@@ -97,6 +88,10 @@ footer{
     justify-content: center;
     text-align: center;
     margin-top: 50px;
+
+    font-family: VaryReg,"Open Sans";
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
 }
 
 .projets div{
@@ -114,6 +109,7 @@ footer{
     height: 150px;
     margin-right: 20px;
     margin-left: 20px;
+    margin-top: 50px;
 }
 .projets img:hover{
     width: 260px;
@@ -133,22 +129,36 @@ footer{
 }
 
 .Arial p{
-
-    font-family: 'Open Sans', sans-serif;
     font-size: 25px;
 }
 .Presentation p{
-    font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     text-align: center;
 }
 
 h4{
+    font-family: VaryReg;
     padding-left: 10px;
     color: #b39d6b;
 }
 
-#vanta-canvas{
-    min-height: 100%;
+.carrousel{
+    display: flex;
+    justify-content: center;
+
+}
+.carrousel img{
+    width: 800px;
+    height: 800px;
+    border :solid white 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}

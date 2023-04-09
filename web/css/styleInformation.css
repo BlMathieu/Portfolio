@@ -1,16 +1,9 @@
-section{
-    border-top: solid white 2px;
-
-}
-
-
 .parcours{
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     text-align: center;
-
 }
 #vanta-canvas{
     padding-bottom: 25px;
@@ -24,8 +17,25 @@ section{
     height: 300px;
     width: 500px;
     margin-right: 50px;
+    background: rgba(0, 0, 0, 0.82);
 }
 
-.étude p {
+.Arial{
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    width: 80%;
 
+}
+.Arial p{
+    margin-left: 25px;
+}
+.Arial h4{
+    text-align: center;
+
+}
+section{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
 }

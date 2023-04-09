@@ -1,0 +1,31 @@
+.monstre{
+    width: 20px;
+    height: 20px;
+}
+.divMonstre{
+
+}
+
+#listeMonstre{
+    display: grid;
+    justify-content: center;
+}
+#space{
+    width: 1000px;
+    height: 700px;
+    background: black;
+    margin-bottom: 30px;
+}
+
+#vaisseau{
+    height: 30px;
+    width: 30px;
+    margin-top: 80px;
+    position: absolute;
+}
+
+.missile{
+    width: 5px;
+    height: 8px;
+    position: absolute;
+}

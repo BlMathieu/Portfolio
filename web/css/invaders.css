@@ -13,7 +13,8 @@
 #space{
     width: 1000px;
     height: 700px;
-    background: black;
+    background: rgba(0, 0, 0, 0.92);
+    border-radius: 20px;
     margin-bottom: 30px;
 }
 
